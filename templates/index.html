@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Faculty Review website" content="This is a faculty and teacher review website  created by ramgopal prajapati">
+<title>MIT Indore </title>
+<link rel="stylesheet" href="\static\style.css">
+</head>
+
+<body>
+    <header> 
+        <div class="text">
+        <div class="nav-bar">
+       <h1>Wel Come to MIT Indore </h1>
+       </header>
+
+   
+    <!--<marquee behavior="alternative" direction="left"><h1>Hello friends Wel Come to Malwa Institute of technology Indore </h1></marquee>
+    <center> <a href="Review">
+     </a></center>  -->
+    
+   
+   <div class="des" ><center><br><br>
+      <a href="https://mitindore.co.in/"><h1>Malwa Institute of Technology Indore </h1></a><br><br>
+    <h2>Here you have a chance to Review your Favorite Facultys .....<br><br><br>Your Reviews Importent For provide feedback on their teaching  expirence , Observe their behaviour , to help other students make informed decisions , or express your appreciation or concerns. </h2></center>
+</div><br><br>
+<center> <h1>Faculty Here...</h1></center>
+    <div class='main'>
+    
+        {% for n in alldata %}
+        <div class="container">
+            <div class="logo">
+                <img src="{{n.Imgs}}" alt="Shop-Photo">
+            </div>
+            <div class="info">
+              Faculty_Name  <h2>{{n.Faculty_Name}}</h2><br>
+              Position <h2>{{n.Position}}</h2><br>
+              Address= <h2>{{n.Address}}</h2><br>
+             <a href="/reviews"> <button  class="btn">Review</button></a><br>
+              
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    
+     <div class='main'>
+        <div class="container">
+            <div class="logo">
+                <img src="/static/Ram.png" alt="Shop-Photo">
+            </div>
+            <div class="info">
+              Faculty Name  <h2>Vijay Malviya</h2><br>
+              Position <h2>HOD IT-Department </h2><br>
+              Address= <h2> 132/7 Nanda nager</h2><br>
+            <a href="/reviews"> <button  class="btn">review</button></a><br>
+
+              
+            </div>
+        </div>
+    </div>
+    
+    <div class='main'>
+        <div class="container">
+            <div class="logo">
+                <img src="/static/ram.png" alt="Shop-Photo">
+            </div>
+            <div class="info">
+              Faculty Name  <h2>Pratyush Sharma</h2><br>
+              Position <h2>HOD CS-Department </h2><br>
+              Address= <h2> 132/7 Nanda nager</h2><br>
+              <a href="/reviews"> <button  class="btn">Review</button></a><br>
+              
+            </div>
+        </div>
+    </div>
+    
+    <div class='main'>
+        <div class="container">
+            <div class="logo">
+                <img src="/static/ram.png" alt="Shop-Photo">
+            </div>
+            <div class="info">
+              Faculty Name  <h2> Dr. M.S. Murthy </h2><br>
+              Position <h2>Director</h2><br>
+              Address= <h2> 132/7 Nanda nager</h2><br>
+              <a href="/reviews"> <button  class="btn">Review</button></a><br>
+              
+            </div>
+        </div>
+    </div>
+
+    <footer><div class="footer">
+        <!-- <h1>Social Profiles</h1>
+        <h1>Follows</h1> -->
+        <div class="dec">
+        <center><h2>Here the Review is being taken only to improve the performance of the teacher.There will be no  any effect on behavior and marks on a perticuler student. And this Review will never be published anywhere . This Review Accessed by only Admin of the system .
+In this Review optional to mantion student name and their details . In this you can only Review your thoughts about any teacher and faculty .  </h2><br><br>
+<h2>Please make sure the word use in Review is properly and not use abouse word .</h1>
+<br><h1>Thank you so much </h1>
+</div><br><br><br>
+<h1>This Website is created by <a href="https://Ramgopal-prajapati.github.io/Ram/"> <h2>Ramgopal Prajapati</h2></a></h1>
+</center>
+</footer>
+</body>
+</html>
